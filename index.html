@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" style="background-color:#001a33;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#section1"><img src="images/icon.png" width="80" height="50"></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li> <a href="#section1"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#section2"><i class="fa fa-male"></i>Men's Fashion</a></li>
+          <li><a href="#section3"><i class="fa fa-female"></i>Women's Fashion</a></li>
+		   <li><a href="#section4"><i class="fa fa-paint-brush"></i>Beauty Product</a></li>
+		    <li><a href="#section5"><i class="fa fa-mobile"></i>Sale</a></li>
+		   
+        </ul>
+		 <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1><div class="w3-content w3-section" style="max-width:100%""height:auto">
+  <img class="mySlides" src="images/slider2.jpg" style="width:100%">
+  <img class="mySlides" src="images/slider3.jpg" style="width:100%">
+</div></h1>
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ 
+ <div id="section2" class="container-fluid">
+  <h1><button class="button button2">Men's Fashion<i class="fa fa-male"></i></button></h1>
+<div class="gallery">
+  <a target="_blank" href="images/mimg1.jpeg">
+    <img src="images/mimg1.jpeg" alt="mimg1" width="300" height="200">
+  </a>
+  <div class="desc">Waterproof Men's Jacket $10</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/mimg2.jpeg">
+    <img src="images/mimg2.jpeg" alt="mimg2" width="300" height="200">
+  </a>
+  <div class="desc">Men's Fashion Shoes $240</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/mimg3.jpeg">
+    <img src="images/mimg3.jpeg" alt="mimg3" width="300" height="200">
+  </a>
+  <div class="desc">Men's Fashion Shoes $540</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/mimg4.jpeg">
+    <img src="images/mimg4.jpeg" alt="mimg4" width="300" height="200">
+  </a>
+  <div class="desc"> Armour Men's T-shirt $100</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/mimg5.jpeg">
+    <img src="images/mimg5.jpeg" alt="mimg5" width="300" height="200">
+  </a>
+  <div class="desc">Blank Men's T-shirt $30</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/mimg6.jpeg">
+    <img src="images/mimg6.jpeg" alt="mimg6" width="300" height="200">
+  </a>
+  <div class="desc">Men's Comfort Sandle $32</div>
+</div>
+
+  </div>
+
+ <div id="section3" class="container-fluid">
+  <h1><button class="button button2">Women's Fashion<i class="fa fa-female"></i></button></h1>
+  
+<div class="gallery">
+  <a target="_blank" href="images/wimg1.jpeg">
+    <img src="images/wimg1.jpeg" alt="wimg1" width="300" height="200">
+  </a>
+  <div class="desc">Women'sBeast T-shirt $10</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/wimg2.jpeg">
+    <img src="images/wimg2.jpeg" alt="wimg2" width="300" height="200">
+  </a>
+  <div class="desc">Women's Silk Blouse $20</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/wimg3.jpeg">
+    <img src="images/wimg3.jpeg" alt="wimg3" width="300" height="200">
+  </a>
+  <div class="desc">Women's Steampunk $140</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/wimg4.jpeg">
+    <img src="images/wimg4.jpeg" alt="wimg4" width="300" height="200">
+  </a>
+  <div class="desc"> Wpmen's Lighting Shoes $100</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/wimg5.jpeg">
+    <img src="images/wimg5.jpeg" alt="wimg5" width="300" height="200">
+  </a>
+  <div class="desc">Women's Linen Shorts $30</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/wimg6.jpeg">
+    <img src="images/wimg6.jpeg" alt="wimg6" width="300" height="200">
+  </a>
+  <div class="desc">Caravan Jumpsuit $32</div>
+</div>
+
+  </div>
+<div id="section4" class="container-fluid">
+  <h1><button class="button button2">Beauty<i class="fa fa-paint-brush"></i></button></h1>
+ <div class="gallery">
+  <a target="_blank" href="images/bimg1.jpeg">
+    <img src="images/bimg1.jpeg" alt="bimg1" width="300" height="200">
+  </a>
+  <div class="desc">Elite LipGloss(red) $10</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/bimg2.jpeg">
+    <img src="images/bimg2.jpeg" alt="bimg2" width="300" height="200">
+  </a>
+  <div class="desc">Men's Truehit & Hill $240</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/bimg3.jpeg">
+    <img src="images/bimg3.jpeg" alt="bimg3" width="300" height="200">
+  </a>
+  <div class="desc">Men's AfterShave Kit $540</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/bimg4.jpeg">
+    <img src="images/bimg4.jpeg" alt="bimg4" width="300" height="200">
+  </a>
+  <div class="desc">  Men's Sauve Profesionals $100</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/bimg5.jpeg">
+    <img src="images/bimg5.jpeg" alt="bimg5" width="300" height="200">
+  </a>
+  <div class="desc">LipGloss Peach Red $30</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/bimg6.jpeg">
+    <img src="images/bimg6.jpeg" alt="bimg6" width="300" height="200">
+  </a>
+  <div class="desc">Creed Men's Perfume $32</div>
+</div>
+</div>
+
+
+<div id="section5" class="container-fluid">
+  <h1><button class="button button2">Sale<i class="fa fa-mobile"></i></button></h1>
+ <div class="gallery">
+  <a target="_blank" href="images/bimg1.jpeg">
+    <img src="images/bimg1.jpeg" alt="bimg1" width="300" height="200">
+  </a>
+  <div class="desc">Elite LipGloss(red) <del>$10</del>$8</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/mimg2.jpeg">
+    <img src="images/mimg2.jpeg" alt="mimg2" width="300" height="200">
+  </a>
+  <div class="desc">Men's Fashion Shoes <del>$310</del>$185</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/wimg3.jpeg">
+    <img src="images/wimg3.jpeg" alt="wsimg3" width="300" height="200">
+  </a>
+  <div class="desc">Women's Steampunk <del>$140</del>$99s</div>
+</div>
+</div>
+<div class="footer">
+  <p>© 2017 Shoplocal | All Rights Reserved</p>
+</div>
+</body>
+</html>
