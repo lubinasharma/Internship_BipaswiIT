@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color:black; background-color: white;}
+  #section1 {padding-top:50px;height:500px;color:black; background-color: white;}
+  #section2 {padding-top:50px;height:500px;color:black; background-color:white;}
+  #section3 {padding-top:50px;height:500px;color:black; background-color:white;}
+  #section41 {padding-top:50px;height:500px;color:black; background-color:white;}
+  #section42 {padding-top:50px;height:500px;color:black; background-color:white;}
+  .mySlides {display:none;}
+  .aside {
+    background-color: teal;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	text-align:center;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :teal;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color:  #00b3b3
+;
+}
+* {
+    box-sizing: border-box;
+}
+div.gallery {
+    margin: 5px;
+    border: 3px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 5px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding:10px  10px ;
+    text-align: center;
+}
+.button {
+    background-color:teal; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.footer {
+    background-color: #001a33;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
